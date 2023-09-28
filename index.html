@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+        <button id="myBtn">Регистрация</button>
+        <div id="myModal" class="modal">
+            <form action="/" method="POST" class="popup-form" id="form" data-netlify="true">
+                <span class="close">&times;</span>
+                <div class="form_title">Регистрация</div>
+                <label class="label">
+                    Email:
+                    <input id="email" type="email" class="form_input email" name="email" placeholder="Введите email" required>
+                </label>
+        
+                <label class="label password_label">
+                    Пароль:
+                    <input type="password" class="form_input password_input password" name="password" placeholder="Введите пароль" minlength="6" required>
+                    <div class="password_btn"><img src="eye.svg" alt="img" style="width:30px"></div>
+                </label>
+        
+                <button type="submit" id="submit" class="btn" value="sign up">Зарегистрироваться</button>
+
+                <label class="label">
+                    <span class="form_error" id="error_text"> </span>
+                </label>
+                
+            </form>
+        <script src="modal_form.js"></script>
+</body>
+
+</html>
